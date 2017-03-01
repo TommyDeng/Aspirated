@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/base :: html_head(~{::title},~{::link},~{::script})">
+<title>Index</title>
+</head>
+<body th:replace="/base :: html_body(~{::#body-content})">
+	<div id="body-content">
+		<p class="version-tag">
+			<a th:href="@{/aboutme}">Aspirated</a>
+		</p>
+		<div class="container">
+			<br /> <br /> <i class="fa fa-power-off fa-3x" aria-hidden="true"></i>
+			<br /> <br /> <br />
+			<p>
+				<i class="fa fa-clock-o" aria-hidden="true"></i> <b
+					th:text="${#calendars.format(#calendars.createNow())}"></b> . <br />
+			</p>
+		</div>
+		<div th:replace="/fragment :: copy-right"></div>
+	</div>
+</body>
+</html>

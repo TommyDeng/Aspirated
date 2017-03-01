@@ -1,0 +1,91 @@
+@media screen and (min-width: 320px) {
+	html {
+		font-size: 17.06667px;
+	}
+}
+
+@media screen and (min-width: 360px) {
+	html {
+		font-size: 19.2px
+	}
+}
+
+@media screen and (min-width: 375px) {
+	html {
+		font-size: 20px
+	}
+}
+
+@media screen and (min-width: 384px) {
+	html {
+		font-size: 20.48px
+	}
+}
+
+@media screen and (min-width: 411px) {
+	html {
+		font-size: 21.92px
+	}
+}
+
+@media screen and (min-width: 414px) {
+	html {
+		font-size: 22.08px
+	}
+}
+
+@media screen and (min-width: 480px) {
+	html {
+		font-size: 25.6px
+	}
+}
+
+@media screen and (min-width: 540px) {
+	html {
+		font-size: 28.8px
+	}
+}
+
+* {
+	font-family: Arial, 'Microsoft YaHei';
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+.version-tag {
+	display: block;
+	position: absolute;
+	width: 120px;
+	border: solid #fff;
+	border-width: 2px 1px;
+	padding: .25em 2.25em;
+	margin: 18px -30px 0 0;
+	right: 0;
+	top: 0px;
+	background: #f7cf57;
+	color: #000;
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px #fff;
+	z-index: 5;
+	-webkit-transform: rotate(45deg) translate(4.8em, -1em);
+	-moz-transform: rotate(45deg) translate(4.8em, -1em);
+	-ms-transform: rotate(45deg) translate(4.8em, -1em);
+	-o-transform: rotate(45deg) translate(4.8em, -1em);
+	transform: rotate(45deg);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .40);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, .40);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, .40);
+	box-shadow: 0 0 6px rgba(0, 0, 0, .40);
+}
