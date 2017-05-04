@@ -25,14 +25,11 @@ public class CxfWebServiceClient {
 	 * @param remoteMethod
 	 * @param args
 	 * @return
+	 * @throws Exception
 	 */
-	private static String invoke(String remoteMethod, String args) {
+	private static String invoke(String remoteMethod, String args) throws Exception {
 		Object[] response = null;
-		try {
-			response = client.invoke(remoteMethod, args);
-		} catch (Exception e) {
-			log.error("CxfWebServiceClient invoke error", e);
-		}
+		response = client.invoke(remoteMethod, args);
 		return (String) response[0];
 	}
 
@@ -78,8 +75,9 @@ public class CxfWebServiceClient {
 	 * @param remoteMethod
 	 * @param args
 	 * @return
+	 * @throws Exception
 	 */
-	public static String initAndInvokeOnce(String wsdlUrl, String remoteMethod, String args) {
+	public static String initAndInvokeOnce(String wsdlUrl, String remoteMethod, String args) throws Exception {
 		init(wsdlUrl);
 		String responseStr = invoke(remoteMethod, args);
 		destroy();
